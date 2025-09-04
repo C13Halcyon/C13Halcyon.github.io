@@ -1,69 +1,81 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Collin Godsell – Profesional Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
 <body>
-  <!-- The Site header with navigation capabilities -->
+  <!-- Site header with navigation -->
   <header class="site-header">
     <div class="container">
-      <a class="brand" href"/">Collin Godsell</a>
+      <a class="brand" href="/">Collin Godsell</a>
       <nav class="nav">
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
         <a class="btn" href="/resume.html">Résumé</a>
-      </nav> 
+      </nav>
     </div>
   </header>
-<!-- Introduction -->
+
+  <!-- Hero/intro -->
   <main class="container">
-    <section id="about">
-      <h1>GIS Technician &amp; Amateur Developer</h1>
+    <section id="about" class="hero">
+      <h1>GIS Technician &amp; Developer</h1>
       <p>
-        Throughout my schooling I have conduct research and complete many projects around GIS and GIS development.
-        I enjoy building lightweight GIS apps and workflows with software such as QGIS, Python, ArcGIS Products, Leaflet/MapLibre and more! I love invesitgating practical solutions using GIS and programming. 
+        I build lightweight GIS apps and workflows with QGIS / ArcGIS, Leaflet/MapLibre, and Python
+        (arcpy, geopandas). Focused on municipal web mapping, geometry repair, and LiDAR-derived DEMs.
       </p>
     </section>
 
+    <!-- Projects with simple cards -->
     <section id="projects">
       <h2>Selected Projects</h2>
 
       <div class="cards">
         <article class="card">
-          <h3>Image Downloader Project </h3>
-     <li><strong>Stack:</strong> Python + HEG</li>
+          <h3>Image Downloader (HEG)</h3>
+          <ul>
+            <li><strong>Stack:</strong> Python + HEG</li>
             <li><strong>What I did:</strong> Automated bulk acquisition and conversion.</li>
             <li><a href="#" target="_blank" rel="noopener">Code / Notes</a></li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>LiDAR Processing Workflow</h3>
+          <h3>LiDAR → DEM Workflow</h3>
           <ul>
-            <li><strong>Stack:</strong>PDAL, Python, ArcGIS, ArcPy</li>
+            <li><strong>Stack:</strong> PDAL, QGIS, Python</li>
+            <li><strong>What I did:</strong> split/ground filtering, burn streams, mask water, fill sinks.</li>
+            <li><a href="#" target="_blank" rel="noopener">Process write-up</a></li>
           </ul>
         </article>
-      </div>  
+
+        <article class="card">
+          <h3>Municipal Zoning Viewer</h3>
+          <ul>
+            <li><strong>Stack:</strong> QGIS Server (WMS), Leaflet</li>
+            <li><strong>What I did:</strong> viewer UI, home extent, scale-dependent layers.</li>
+            <li><a href="#" target="_blank" rel="noopener">Live demo</a></li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <!-- My Education -->
+    <!-- Education -->
     <section id="education">
-      <h2> Education</h2>
-      <p><strong> BA (Honours) in Geomatics, Minor in Physical Geogrpahy</strong> -> Carleton University</p>
+      <h2>Education</h2>
+      <p><strong>BA (Honours) in Geomatics</strong> — Carleton University</p>
+      <!-- Add awards/courses if you want -->
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:yourname@email.com">collingodsell@ymail.com</a></p>
-      <p>LinkedIn: <a href="www.linkedin.com/in/collin-godsell">www.linkedin.com/in/collin-godsell</a></p>
+      <p><a href="mailto:collingodsell@mail.com">collingodsell@mail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/collin-godsell/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/C13Halcyon" target="_blank" rel="noopener">GitHub</a></p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="y"></span> Collin Godsell</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
-</html>
-
-
-
-
-
