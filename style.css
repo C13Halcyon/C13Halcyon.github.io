@@ -1,1 +1,43 @@
+/* Base & layout */
+:root { --mx: 960px; --pad: 16px; --radius: 14px; --shadow: 0 6px 20px rgba(0,0,0,.08); }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.65; color: #222; background: #f7f7fb; }
 
+.container { max-width: var(--mx); margin: 0 auto; padding: 0 20px; }
+
+/* Header / nav */
+.site-header { background: #0b3d91; color: #fff; position: sticky; top: 0; z-index: 10; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; }
+.brand { color: #fff; text-decoration: none; font-weight: 700; letter-spacing: .2px; }
+.nav a { color: #dce8ff; text-decoration: none; margin-left: 14px; }
+.nav a:hover { color: #fff; }
+.nav .btn { background: #fff; color: #0b3d91; padding: 8px 12px; border-radius: 999px; font-weight: 600; }
+
+/* Sections */
+.hero { padding: 32px 0 10px; }
+h1 { margin: 0 0 8px; font-size: clamp(24px, 3.2vw, 34px); }
+h2 { margin: 28px 0 12px; font-size: 22px; }
+h3 { margin: 0 0 8px; font-size: 18px; }
+
+main { background: #fff; border-radius: var(--radius); padding: 22px; margin: 20px auto; box-shadow: var(--shadow); }
+
+/* Project cards */
+.cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.card { border: 1px solid #e9e9ef; border-radius: var(--radius); padding: 14px; background: #fff; }
+.card ul { margin: 0; padding-left: 18px; }
+
+/* Links */
+a { color: #0b3d91; }
+a:hover { text-decoration: underline; }
+
+/* Footer */
+.site-footer { color: #666; padding: 20px 0 40px; background: transparent; text-align: center; }
+
+/* Dark mode (auto) */
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0b0e; color: #e9e9ee; }
+  main { background: #15151b; border-color: #2a2a36; }
+  .card { background: #15151b; border-color: #2a2a36; }
+  .nav a { color: #cfe0ff; }
+}
