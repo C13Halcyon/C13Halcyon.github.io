@@ -7,25 +7,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Collin Godsell</h1>
-    <p>GIS Technician & Amateur Developer</p>
+  <!-- The Site header with navigation capabilities -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href"/">Collin Godsell</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="/resume.html">Résumé</a>
+      </nav> 
+    </div>
   </header>
-
-  <main>
+<!-- Introduction -->
+  <main class="container">
     <section id="about">
-      <h2>About</h2>
-      <p>I atteneded Carleton University where I achieved a Bachelor of Arts Honours in Geomatics with a minor in Physical Geography.</p>
+      <h1>GIS Technician &amp; Amateur Developer</h1>
+      <p>
+        I atteneded Carleton University where I achieved a Bachelor of Arts Honours in Geomatics with a minor in Physical Geography. 
+        Throughout my schooling I have conduct research and complete many projects around GIS and GIS development.
+        I enjoy building lightweight GIS apps and workflows with software such as QGIS, Python, ArcGIS Products, Leaflet/MapLibre and more! I love invesitgating practical solutions using GIS and programming. 
+      </p>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Image Downloader Project</strong> – Built with Python and HEG. 
-        <li><strong>LiDAR DEM Workflow</strong> – Used PDAL & Python for terrain modeling
-      </ul>
+      <h2>Selected Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Image Downloader Project </h3>
+     <li><strong>Stack:</strong> Python + HEG</li>
+            <li><strong>What I did:</strong> Automated bulk acquisition and conversion.</li>
+            <li><a href="#" target="_blank" rel="noopener">Code / Notes</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>LiDAR Processing Workflow</h3>
+          <ul>
+            <li><strong>Stack:</strong>PDAL, Python, ArcGIS, ArcPy</li>
+          </ul>
+        </article>
+      </div>  
     </section>
 
+    <!-- My Education -->
+    <section id="education">
+      <h2> Education</h2>
+      <p><strong> BA (Honours) in Geomatics, Minor in Physical Geogrpahy</strong> -> Carleton University</p>
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:yourname@email.com">collingodsell@ymail.com</a></p>
@@ -34,6 +63,7 @@
   </main>
 </body>
 </html>
+
 
 
 
