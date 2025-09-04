@@ -1,7 +1,7 @@
 <body>
-  <!-- Site header with navigation -->
+  <!-- Header -->
   <header class="site-header">
-    <div class="container">
+    <div class="container bar">
       <a class="brand" href="/">Collin Godsell</a>
       <nav class="nav">
         <a href="#projects">Projects</a>
@@ -12,25 +12,29 @@
     </div>
   </header>
 
-  <!-- Hero/intro -->
-  <main class="container">
-    <section id="about" class="hero">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
       <h1>GIS Technician &amp; Developer</h1>
-      <p>
-        I build lightweight GIS apps and workflows with QGIS / ArcGIS, Leaflet/MapLibre, and Python
-        (arcpy, geopandas). Focused on municipal web mapping, geometry repair, and LiDAR-derived DEMs.
+      <p class="lede">
+        I build lightweight GIS apps and workflows with QGIS / ArcGIS, Leaflet/MapLibre, and Python (arcpy, geopandas).
+        Focused on municipal web mapping, geometry repair, and LiDAR-derived DEMs.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects with simple cards -->
+  <!-- Main content shell (white card) -->
+  <main class="container shell">
     <section id="projects">
       <h2>Selected Projects</h2>
 
       <div class="cards">
         <article class="card">
           <h3>Image Downloader (HEG)</h3>
+          <div class="badges">
+            <span class="badge">Python</span><span class="badge">HEG</span>
+          </div>
           <ul>
-            <li><strong>Stack:</strong> Python + HEG</li>
             <li><strong>What I did:</strong> Automated bulk acquisition and conversion.</li>
             <li><a href="#" target="_blank" rel="noopener">Code / Notes</a></li>
           </ul>
@@ -38,8 +42,10 @@
 
         <article class="card">
           <h3>LiDAR → DEM Workflow</h3>
+          <div class="badges">
+            <span class="badge">PDAL</span><span class="badge">QGIS</span><span class="badge">Python</span>
+          </div>
           <ul>
-            <li><strong>Stack:</strong> PDAL, QGIS, Python</li>
             <li><strong>What I did:</strong> split/ground filtering, burn streams, mask water, fill sinks.</li>
             <li><a href="#" target="_blank" rel="noopener">Process write-up</a></li>
           </ul>
@@ -47,8 +53,10 @@
 
         <article class="card">
           <h3>Municipal Zoning Viewer</h3>
+          <div class="badges">
+            <span class="badge">QGIS Server (WMS)</span><span class="badge">Leaflet</span>
+          </div>
           <ul>
-            <li><strong>Stack:</strong> QGIS Server (WMS), Leaflet</li>
             <li><strong>What I did:</strong> viewer UI, home extent, scale-dependent layers.</li>
             <li><a href="#" target="_blank" rel="noopener">Live demo</a></li>
           </ul>
@@ -56,18 +64,16 @@
       </div>
     </section>
 
-    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <p><strong>BA (Honours) in Geomatics</strong> — Carleton University</p>
-      <!-- Add awards/courses if you want -->
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <p><a href="mailto:collingodsell@mail.com">collingodsell@mail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/collin-godsell/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/C13Halcyon" target="_blank" rel="noopener">GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/collin-godsell/" target="_blank" rel="noopener">LinkedIn</a> ·
+         <a href="https://github.com/C13Halcyon" target="_blank" rel="noopener">GitHub</a></p>
     </section>
   </main>
 
